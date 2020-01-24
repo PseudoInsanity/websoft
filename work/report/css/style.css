@@ -1,27 +1,7 @@
 /*
  * Comments are written as C++ style. 
  */
-html {
-    overflow-y: scroll;
-}
 
-body {
-    margin: 8px auto;
-    background: #444b6e;
-    width: 700px;
-    color: #ffff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    color: #f8f991;
-}
-*, *:after, *:before {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
-        body {background: #fafafa;font-family: arial narrow, arial;font-size: 120%;margin: 0; }
-        body, html, .page {height: 100%;overflow: hidden; }
-        :last-child {margin-bottom: 0; }
-        h1, h2, h3, h4, p, li {margin-top: 0; }
-        header, main, section {display: block; }
 
 .page {
   position: fixed;
@@ -83,6 +63,23 @@ a {
   position: fixed;
   width: 50%;
   z-index: 1; }
+
+
+.section-container-about {
+    -moz-transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    transition: 0.4s all;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    border: 0px solid;
+    height: 50%;
+    overflow: hidden;
+    position: fixed;
+    width: 50%;
+    z-index: 1; }
 
   .section-container-two {
     -moz-transition: 0.4s all;
@@ -180,3 +177,39 @@ a {
 #exit:target .page .section-container {
   border: none;
   opacity: 1; }
+
+  html {
+    overflow-y: scroll;
+}
+
+
+*, *:after, *:before {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
+        body {background: #fafafa;font-family: arial narrow, arial;font-size: 120%;margin: 0; }
+        body, html, .page {height: 100%;overflow: hidden; }
+        :last-child {margin-bottom: 0; }
+        h1, h2, h3, h4, p, li {margin-top: 0; }
+        header, main, section {display: block; }
+
+body {
+    margin: 8px auto;
+    background: #444b6e;
+    width: 700px;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #f8f991;
+}
+
+.about {
+    padding-bottom: 150px;
+    padding-left: 170px;
+    background: #444b6e;
+    font-size: 100px;
+}
+
+.span-about {
+    color: #f8f991;
+    font-size: 100px;
+}
