@@ -2,6 +2,15 @@
  * Comments are written as C++ style. 
  */
 
+ html {
+    overflow-y: scroll;
+    
+}
+
+
+.about-link {
+    color: #444b6e;
+}
 
 .page {
   position: fixed;
@@ -164,7 +173,8 @@
   -o-transform: translate(100%, 0%);
   -webkit-transform: translate(100%, 0%);
   transform: translate(100%, 0%);
-  background: #9ab87a; }
+  background: #f8f991; 
+  color: #444b6e;}
 
 .section-four {
   -moz-transform: translate(100%, 100%);
@@ -178,28 +188,34 @@
   border: none;
   opacity: 1; }
 
-  html {
-    overflow-y: scroll;
-}
 
 
 *, *:after, *:before {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
         body {background: #fafafa;font-family: arial narrow, arial;font-size: 120%;margin: 0; }
-        body, html, .page {height: 100%;overflow: hidden; }
+        body, html, .page {height: 100%;overflow-y: scroll; }
         :last-child {margin-bottom: 0; }
         h1, h2, h3, h4, p, li {margin-top: 0; }
         header, main, section {display: block; }
 
+        
+
+
+        
 body {
-    margin: 8px auto;
     background: #444b6e;
     width: 700px;
     color: #ffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 a {
     color: #f8f991;
+}
+
+.main {
+    margin: 8px auto;
 }
 
 .about {
@@ -208,6 +224,7 @@ a {
     background: #444b6e;
     font-size: 100px;
 }
+
 
 .span-about {
     margin: 8px auto;
