@@ -210,6 +210,7 @@ a {
 }
 
 .span-about {
+    margin: 8px auto;
     color: #f8f991;
     font-size: 100px;
 }
