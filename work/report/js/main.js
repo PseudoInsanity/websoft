@@ -1,36 +1,48 @@
 /**
  * A function to wrap it all in.
  */
-function getData() {
-    'use strict';
 
-    fetch('data/schools_malmo.json')
-        .then((response) => {
-            return response.json();
-        })
-        .then((myJson) => {
-            console.log(myJson);
-        })
-    console.log("All ready.");
+
+function getData() {
+  "use strict";
+
+  $("footer").css("position", "relative");
+
+  fetch('data/schools_malmo.json')
+    .then((response) => {
+      return response.json();
+    }).then((myJson) => {
+      updateTable(myJson.Skolenheter);
+    });
+
+
 }
 
-function updateTable(){
-    var jsonData = getData()
-    console.log(jsonData)
-    var tableHTML = "<tr>";
-    for (var headers in jsonData[0]) {
-      tableHTML += "<th>" + headers + "</th>";
-    }
-    tableHTML += "</tr>";
+function updateTable(tableData) {
+  var keys = [];
+  var table = document.getElementById('school-table');
+  var tableContent = '';
+  tableContent += ("<tr>");
   
-    for (var eachItem in jsonData) {
-      tableHTML += "<tr>";
-      var dataObj = jsonData[eachItem];
-      for (var eachValue in dataObj){
-        tableHTML += "<td>" + dataObj[eachValue] + "</td>";
-      }
-      tableHTML += "</tr>";
-    }
-  
-    document.getElementById('school-table').innerHTML = tableHTML;
+  for (key in tableData[0]) {
+    tableContent += ('<th>' + key + '</th>');
   }
+
+  tableContent += ("</tr>");
+
+  for (var i = 0; i < tableData.length; i++) {
+
+    tableContent += ("<tr>");
+
+    for (key in tableData[i]) {
+      tableContent += ('</tr>' + tableData[i][key] + '</td>');
+    } 
+
+    tableContent += ("</tr>");
+
+  }
+  table.innerHTML = tableContent;
+  console.log(tableContent);
+}
+
+document.addEventListener("DOMContentLoaded", getData, false);

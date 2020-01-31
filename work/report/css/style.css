@@ -2,9 +2,71 @@
  * Comments are written as C++ style. 
  */
 
- html {
-    overflow-y: scroll;
-    
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(31, 59, 40);
+  color: white;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+
+}
+
+body {
+
+  background: #444b6e;
+  width: 700px;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+
+a {
+
+  color: #f8f991;
+}
+
+.about {
+  padding-bottom: 150px;
+  padding-left: 170px;
+  background: #444b6e;
+  font-size: 100px;
+}
+
+
+.span-about {
+  margin: 8px auto;
+  color: #f8f991;
+  font-size: 100px;
+}
+.main {
+  background: #444b6e;
+  width: 700px;
+  color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 8px auto;
 }
 
 
@@ -192,7 +254,7 @@
 
 *, *:after, *:before {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
         body {background: #fafafa;font-family: arial narrow, arial;font-size: 120%;margin: 0; }
-        body, html, .page {height: 100%;overflow-y: scroll; }
+         html, .page {height: 100%;overflow-y: scroll; }
         :last-child {margin-bottom: 0; }
         h1, h2, h3, h4, p, li {margin-top: 0; }
         header, main, section {display: block; }
@@ -201,37 +263,3 @@
 
 
         
-body {
-    background: #444b6e;
-    width: 700px;
-    color: #ffff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-
-a {
-    color: #f8f991;
-}
-
-.main {
-    margin: 8px auto;
-}
-
-.about {
-    padding-bottom: 150px;
-    padding-left: 170px;
-    background: #444b6e;
-    font-size: 100px;
-}
-
-
-.span-about {
-    margin: 8px auto;
-    color: #f8f991;
-    font-size: 100px;
-}
