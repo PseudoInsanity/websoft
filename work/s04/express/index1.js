@@ -26,8 +26,8 @@ app.get("/", (req, res) => {
 });
 
 // Add a route for the path /about
-app.get("/about", (req, res) => {
-    res.send("About something");
+app.get("/report", (req, res) => {
+    res.send('../../report/report.html');
 });
 
 // Start up server and begin listen to requests
