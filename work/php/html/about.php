@@ -12,14 +12,7 @@
 
 <body>
     <div class="topnav" id="myTopnav">
-        <nav>
-            <a href="me.html">Me</a>
-            <a href="report.html">Report</a>
-            <a href="about.html" class="active">About</a>
-            <a href="schools.html">Schools</a>
-            <a href="flags.html">Flags</a>
-            
-        </nav>
+        <?php require "../view/header.php"?>
 
     </div>
     <div class="tooltip" id="poop">
@@ -27,7 +20,7 @@
         <span class="tooltiptext">I am moveable!</span>
     </div>
     <div class="main aboutextra">
-
+        
         <h1>About me</h1>
 
         <p>My name is Edmir, and I am 23 years young. I'm not sure what to write about myself. I play guitar, games and
@@ -40,10 +33,7 @@
 
     </div>
 
-    <footer>
-        <hr>
-        <p>Click on this <a href="startpage.html">link</a>. See what happens</p>
-    </footer>
+    <div> <?php require "../view/footer.php" ?></div>
 
     <script type="text/javascript" src="../js/main.js"></script>
     <script type="text/javascript" src="../js/poop.js"></script>
