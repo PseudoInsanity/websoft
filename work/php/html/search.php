@@ -66,6 +66,7 @@ $res = $stmt->fetchAll();
     </div>
     <form class="main steelBlueCols">
     <p>
+        <h1>Search for instruments!</h1>
         <label>Search: 
             <input type="text" name="search" value="<?= $search ?>">
         </label>
