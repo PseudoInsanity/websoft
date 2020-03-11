@@ -133,7 +133,22 @@
 
         <section>
             <h2>S09</h2>
-            <p>Here is the text for this section.</p>
+            <p>
+                Answer:<br>
+                I assume that the most common security flaw in web applications is using HTTP instead of HTTPS. This directly correlates to number 6 on OWASPs list. Using SSL over an HTTP connection is fundamental nowadays when creating websites.
+                One other thing that happens more often than it should, is inproper storage of sensitive data. Sometimes as bad as storing password in plain text (not only web applications), and sometimes as just not have any encryption at all.
+                The third thing that I believe many overlook when creating web applications is broken authentication. 
+                Poorly handled sessions and authentication can cause manipulation of sessions leading attackers to enter parts of a website they do not have permission to.
+                <br>
+                <br>
+                Solution:
+                Using HTTPS will increase security of your website and prevent sensitive information to leak.
+                Speaking of sensitive information, not storing users password in plain text can heavily increase security on your website. Using encryption on sensitive data will also inevitably increase security of your website.
+                Using multi-factor authentication is a good way to prevent other people to access your website with someone elses credentials. Implementing weak-password checks can also give the user a bigger incentive to put in an effort on their password so no one tries to use "password" as their password.
+                <br>
+                <br>
+                TIL what OWASP is.
+            </p>
         </section>
 
         <section>
